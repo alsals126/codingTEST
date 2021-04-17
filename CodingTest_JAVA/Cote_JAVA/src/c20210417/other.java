@@ -1,29 +1,25 @@
 package c20210417;
 // 주석은 내가 삽입
-// '다른 사람의 풀이'중 가장 상단에 있는 풀이 가져옴...
+// '다른 사람의 풀이'중 가장 상단에 있는 풀이 가져옴...(개편된 문제의 정답을 가져옴)
 // 다들 천재시네욥.. ><
-import java.util.*;
+import java.util.Arrays;
 
 public class other {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr =  {1, 1, 3, 3, 0, 1, 1};
+		int arr[] = {2, 36, 1, 3};
+		int divisor = 1;
 		
-		ArrayList<Integer> tempList = new ArrayList<Integer>(); // ArrayList 선언
-		int preNum = 10; // 0~9의 숫자만 들어가있으니까 10을 넣어준다.
-		                 // 그러면 첫번째 인덱스가 먼저 ArrayList에 들어감 ==> "내가 이 부분을 생각하지 못함"
-		for(int num : arr) { // arr 돌리기
-			if(preNum != num)       // num이랑 preNum이 같지 않으면
-				tempList.add(num);  // ArrayList에 num 삽입
-		    preNum = num;           // preNum에 num을 삽입
-		}       
+		int[] answer = Arrays.stream(arr).filter(factor -> factor % divisor == 0).toArray();
+		// 배열을 stream 객체를 만든다. 그런 다음 필터링을 한다. 
+		// 람다함수 : 익명 함수를 지칭하는 용어(함수의 이름이 없는)	   /    (매개변수) -> {실행문}
+		// 람다식을 이용 => factor(arr의 값)라는 매개변수를 만들고 factor%divisor이 0이라면 
+		// toArray()함수를 이용해 answer배열에 넣는다.
 		
-		// ArrayList에 있는 값들을 answer에 넣어주기
-		int[] answer = new int[tempList.size()];
-		for(int i=0; i<answer.length; i++) {
-			answer[i] = tempList.get(i).intValue();
-		}
+		if(answer.length == 0)         // answer 길이가 0이라면 
+			answer = new int[] {-1};   // -1값만 넣어준다.
+		Arrays.sort(answer); //정렬
 		
 		// 결과가 잘나오는지 출력
 		System.out.print("[ ");
