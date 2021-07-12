@@ -12,8 +12,11 @@ long long solution(long long n) {
 }
 
 int main() {
-    printf("%d\n", solution(121));
-    printf("%d", solution(3));
+    //char, short, int는 %d로 출력
+    //long은 %ld로 출력
+    //long long은 %lld로 출력
+    printf("%lld\n", solution(121));
+    printf("%lld", solution(3));
 
     return 0;
 }
