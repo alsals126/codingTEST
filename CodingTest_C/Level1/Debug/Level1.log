@@ -1,1 +1,3 @@
-﻿  Level1.vcxproj -> D:\오정민(2021년)\3학년\ㅎ개인\CodingTest_C\Level1\Debug\Level1.exe
+﻿  me3.c
+D:\오정민(2021년)\3학년\ㅎ개인\CodingTest_C\Level1\me3.c(42,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Level1.vcxproj -> D:\오정민(2021년)\3학년\ㅎ개인\CodingTest_C\Level1\Debug\Level1.exe

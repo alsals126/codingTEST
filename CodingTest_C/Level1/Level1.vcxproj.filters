@@ -19,6 +19,9 @@
     <Filter Include="소스 파일\210712">
       <UniqueIdentifier>{34d1a407-8bf4-41a9-baf3-0dc2d47b4aa8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\210718">
+      <UniqueIdentifier>{1ff44a7e-ddbc-4ce9-999d-857d29aafbdd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="me.c">
@@ -32,6 +35,9 @@
     </ClCompile>
     <ClCompile Include="me2.c">
       <Filter>소스 파일\210712</Filter>
+    </ClCompile>
+    <ClCompile Include="me3.c">
+      <Filter>소스 파일\210718</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
